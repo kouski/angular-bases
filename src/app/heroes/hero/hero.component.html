@@ -11,6 +11,6 @@
   <dd>{{CapitalizedName}}</dd>
 </dl>
 
-<button *ngIf="name !== 'spiderman'" (click)="changeName()">Cambiar nombre</button>
-<button *ngIf="age !== 25" (click)="changeAge()">Cambiar edad</button>
-<button  (click)="reset()">Reset</button>
+<button *ngIf="name !== 'spiderman'" (click)="changeName()" class="btn btn-warning">Cambiar nombre</button>
+<button *ngIf="age !== 25" (click)="changeAge()" class="btn btn-warning">Cambiar edad</button>
+<button  (click)="reset()" class="btn btn-warning">Reset</button>
