@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+button{
+  background-color: chocolate;
+  color: wheat;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
