@@ -1,7 +1,16 @@
 <h4>Listado</h4>
 <ul class="list-group">
-  <li *ngFor="let character of characterList" class="list-group-item">
-    {{character.name}} - power: {{character.power}}
+  <li
+    *ngFor="let character of characterList;
+    let i = index;
+    let isFirst = first"
+    class="list-group-item"
+    [ngClass]="{'list-group-item-warning': isFirst }"
+  >
+    <span class="text-primary">{{ i + 1 }}. </span>
+    <span [ngStyle]="{ color: 'blue' }">{{ character.name }} - </span>
+    <strong>Power: </strong>
+    <span>{{ character.power }}</span>
   </li>
   <!-- <li class="list-group-item">Goku - 10,000</li> -->
 </ul>

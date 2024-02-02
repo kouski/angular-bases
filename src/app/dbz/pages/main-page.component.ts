@@ -3,17 +3,21 @@ import { Character } from '../interfaces/character.interface';
 
 @Component({
   selector: 'app-dbz-main-page',
-  templateUrl: './main-page.component.html'
+  templateUrl: './main-page.component.html',
 })
-
 export class MainPageComponent {
-    characters: Character[] = [{
+  characters: Character[] = [
+    {
       name: 'Krillin',
       power: 1000,
     },
-  {
-    name:'Goku',
-    power: 9500,
-  }
+    {
+      name: 'Goku',
+      power: 9500,
+    },
+    {
+      name: 'Trunks',
+      power: 10,
+    },
   ];
 }
